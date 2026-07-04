@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+# Lumora AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Lumora AI** is an advanced AI assistant and management application developed by **Stack Fellows**. It provides a comprehensive suite of tools designed to streamline your daily tasks, manage your finances, and automate communications through intelligent AI agents.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🏢 About Stack Fellows
 
-## React Compiler
+- **Company Name:** Stack Fellows
+- **Website:** [www.stackfellows.com](https://www.stackfellows.com)
+- **Email:** [info@stackfellows.com](mailto:info@stackfellows.com)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Dashboard:** Full overview of your tasks and activities.
+- **Task Management:** Create, track, and manage your daily tasks.
+- **Finance Tracking:** Keep track of your expenses and financial goals.
+- **Lumora AI Assistant:** An intelligent conversational agent to answer queries and assist you.
+- **WhatsApp Integration:** Deploy an AI agent to draft and dispatch context-aware WhatsApp messages instantly.
+- **Email Management:** Automate and manage your email communications.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+---
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 📜 Terms and Conditions
+
+By accessing and using our application, you accept and agree to be bound by the terms and provisions of this agreement. 
+
+### 1. Introduction
+Welcome to Stack Fellows. These terms apply to all visitors, users, and others who access or use the Service.
+
+### 2. Use of Service
+You agree not to use the service for any unlawful purpose or any purpose prohibited under this clause. You agree not to use the service in any way that could damage the service or general business of Stack Fellows.
+
+### 3. AI and Automated Services
+Our application utilizes AI agents and automated services (including WhatsApp and Email bots). You are responsible for configuring the rules and training data for these agents. Stack Fellows is not liable for any messages sent by the AI agents on your behalf.
+
+### 4. Modifications
+Stack Fellows reserves the right to revise these terms of service for its application at any time without notice. By using this application you are agreeing to be bound by the then current version of these terms of service.
+
+---
+
+*Built with ❤️ by [Stack Fellows](https://www.stackfellows.com).*
