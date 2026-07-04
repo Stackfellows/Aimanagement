@@ -41,7 +41,7 @@ const AiAssistant = () => {
   return (
     <div className="h-[calc(100vh-6rem)] flex flex-col space-y-4">
       <div>
-        <h1 className="text-2xl font-bold text-foreground">{userName ? `${userName}'s Lumora AI` : 'Lumora AI'}</h1>
+        <h1 className="text-2xl font-bold text-foreground">{userName ? `${userName}'s Lamora AI` : 'Lamora AI'}</h1>
         <p className="text-foreground/60 mt-1 text-sm">Ask me anything about your tasks, finances, or general questions.</p>
       </div>
 

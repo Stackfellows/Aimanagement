@@ -1,6 +1,6 @@
-# Lumora AI
+# Lamora AI
 
-**Lumora AI** is an advanced AI assistant and management application developed by **Stack Fellows**. It provides a comprehensive suite of tools designed to streamline your daily tasks, manage your finances, and automate communications through intelligent AI agents.
+**Lamora AI** is an advanced AI assistant and management application developed by **Stack Fellows**. It provides a comprehensive suite of tools designed to streamline your daily tasks, manage your finances, and automate communications through intelligent AI agents.
 
 ---
 
@@ -17,7 +17,7 @@
 - **Dashboard:** Full overview of your tasks and activities.
 - **Task Management:** Create, track, and manage your daily tasks.
 - **Finance Tracking:** Keep track of your expenses and financial goals.
-- **Lumora AI Assistant:** An intelligent conversational agent to answer queries and assist you.
+- **Lamora AI Assistant:** An intelligent conversational agent to answer queries and assist you.
 - **WhatsApp Integration:** Deploy an AI agent to draft and dispatch context-aware WhatsApp messages instantly.
 - **Email Management:** Automate and manage your email communications.
 

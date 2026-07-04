@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const navigation = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard, requiredPlan: ['trial', 'basic', 'premium'] },
   { name: 'Tasks', href: '/tasks', icon: CheckSquare, requiredPlan: ['trial', 'basic', 'premium'] },
-  { name: 'Lumora AI', href: '/ai', icon: MessageSquare, requiredPlan: ['trial', 'premium'] },
+  { name: 'Lamora AI', href: '/ai', icon: MessageSquare, requiredPlan: ['trial', 'premium'] },
   { name: 'WhatsApp', href: '/whatsapp', icon: MessageCircle, requiredPlan: ['trial', 'premium'] },
   { name: 'Finance', href: '/finance', icon: Wallet, requiredPlan: ['trial', 'basic', 'premium'] },
 ];

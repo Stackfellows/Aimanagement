@@ -85,7 +85,7 @@ const Pricing = () => {
             </li>
             <li className="flex items-center gap-3 opacity-40">
               <Check className="w-5 h-5 text-primary" />
-              <span>Lumora AI</span>
+              <span>Lamora AI</span>
             </li>
             <li className="flex items-center gap-3 opacity-40">
               <Check className="w-5 h-5 text-primary" />
@@ -129,7 +129,7 @@ const Pricing = () => {
             </li>
             <li className="flex items-center gap-3">
               <Check className="w-5 h-5 text-primary" />
-              <span className="font-medium text-foreground">Advanced Lumora AI</span>
+              <span className="font-medium text-foreground">Advanced Lamora AI</span>
             </li>
             <li className="flex items-center gap-3">
               <Check className="w-5 h-5 text-primary" />
