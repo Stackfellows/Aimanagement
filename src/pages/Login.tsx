@@ -22,7 +22,8 @@ const Login = () => {
       window.location.reload();
     } catch (err) {
       console.error('Auth failed', err);
-      alert('ACCESS DENIED. INCORRECT CREDENTIALS.');
+      const errorMsg = err.response?.data?.message || err.message || 'Unknown error occurred';
+      alert(`ACCESS DENIED. ${errorMsg}`);
       setLoading(false);
     }
   };
@@ -98,13 +99,16 @@ const Login = () => {
           </button>
         </form>
         
-        <div className="mt-6 text-center w-full border-t border-[#10b981]/20 pt-4">
+        <div className="mt-6 text-center w-full border-t border-[#10b981]/20 pt-6">
+          <p className="text-xs text-[#10b981]/60 mb-2">
+            {isLogin ? "DON'T HAVE AN AGENT NODE?" : "ALREADY HAVE AN AGENT NODE?"}
+          </p>
           <button 
             type="button"
             onClick={() => setIsLogin(!isLogin)} 
-            className="text-[11px] text-[#10b981]/60 hover:text-[#10b981] uppercase tracking-widest transition-colors"
+            className="w-full bg-transparent border border-[#10b981]/30 text-[#10b981] py-2 rounded-sm font-bold tracking-widest hover:bg-[#10b981]/10 transition-colors"
           >
-            {isLogin ? ">> INITIALIZE NEW AGENT NODE" : "<< RETURN TO AUTHENTICATION"}
+            {isLogin ? "SWITCH TO REGISTER" : "SWITCH TO LOGIN"}
           </button>
         </div>
       </div>

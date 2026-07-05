@@ -1,8 +1,10 @@
 import axios from 'axios';
 
-// Since we setup the Vite proxy, we can just use /api
+// Always use the Render URL as the backend
+const BACKEND_URL = 'https://lamuraai.onrender.com/api';
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: BACKEND_URL,
   headers: {
     'Content-Type': 'application/json',
   },
@@ -14,6 +16,8 @@ api.interceptors.request.use((config) => {
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
+  
+  console.log(`🚀 API Requesting: ${config.url || config.baseURL}`);
   return config;
 });
 

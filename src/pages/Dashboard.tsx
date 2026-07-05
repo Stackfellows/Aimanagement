@@ -34,7 +34,8 @@ const Dashboard = () => {
 
     // Connect Socket for WhatsApp with JWT Auth
     const token = localStorage.getItem('token');
-    const socket = io('/', { auth: { token } }); // Proxied to backend
+    const backendUrl = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : '/';
+    const socket = io(backendUrl, { auth: { token } });
     
     socket.on('whatsapp_qr', (qr: string) => {
       console.log('Received QR');
