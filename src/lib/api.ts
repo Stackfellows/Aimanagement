@@ -10,8 +10,20 @@ const api = axios.create({
   },
 });
 
-// Interceptor for attaching auth token
+// Interceptor for attaching auth token and fixing URLs
 api.interceptors.request.use((config) => {
+  // Always use Render URL if not provided by env
+  const envUrl = import.meta.env.VITE_API_URL || 'https://lamuraai.onrender.com/api';
+  
+  if (envUrl) {
+    let base = envUrl.replace(/\/+$/, ''); // remove trailing slash
+    if (!base.endsWith('/api')) {
+      base += '/api';
+    }
+    const path = config.url?.startsWith('/') ? config.url : `/${config.url}`;
+    config.baseURL = ''; // Clear baseURL so Axios doesn't interfere
+    config.url = `${base}${path}`;
+  }
   const token = localStorage.getItem('token');
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
